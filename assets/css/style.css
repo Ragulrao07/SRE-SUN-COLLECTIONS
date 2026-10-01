@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Marcellus&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --gold-glow: #d4af37;
+  --gold-highlight: #fff6c8;
+  --gold-shadow: #8f6516;
+  
+  /* Royal Deep Emerald & Malachite Velvet Palette */
+  --royal-dark: #051410;
+  --royal-card: rgba(8, 28, 22, 0.78);
+  --royal-surface: #0a261e;
+  --royal-border: rgba(212, 175, 55, 0.32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--royal-dark);
+  color: #f7f6f0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Luxury Royal Typography */
+h1, h2, h3, .font-royal {
+  font-family: 'Cinzel', serif;
+}
+
+.font-traditional {
+  font-family: 'Marcellus', serif;
+}
+
+/* Moving Motion Aura (Living Video Backdrop) */
+.video-motion-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: 
+    radial-gradient(circle at 18% 25%, rgba(13, 59, 46, 0.65) 0%, transparent 45%),
+    radial-gradient(circle at 82% 75%, rgba(212, 175, 55, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(5, 20, 16, 0.95) 0%, #030d0a 100%);
+  animation: velvetMotion 16s ease-in-out infinite alternate;
+}
+
+@keyframes velvetMotion {
+  0% { transform: scale(1); filter: brightness(1) saturate(1); }
+  50% { transform: scale(1.04); filter: brightness(1.1) saturate(1.15); }
+  100% { transform: scale(1); filter: brightness(0.95) saturate(1); }
+}
+
+#motionCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* Royal Gold Text with High Shimmer */
+.gold-text {
+  background: linear-gradient(135deg, #fff9d6 0%, #d4af37 40%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: var(--royal-border);
+}
+
+/* Interactive Velvet Cards */
+.gold-glow-card {
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: var(--royal-card);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--royal-border);
+}
+
+.gold-glow-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.85);
+  box-shadow: 0 14px 34px -10px rgba(212, 175, 55, 0.35);
+}
+
+/* Royal Gold Action Buttons */
+.btn-royal-gold {
+  background: linear-gradient(135deg, #e3be47 0%, #a87216 100%);
+  color: #04100c;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-royal-gold:hover {
+  background: linear-gradient(135deg, #fff2b8 0%, #d4af37 100%);
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.55);
+  transform: scale(1.02);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.4);
+  animation: floatingPulse 3s infinite ease-in-out;
+}
+
+@keyframes floatingPulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
