@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sresuncollections.com/sitemap.xml
+Sitemap: https://sre-sun-collections.pages.dev/sitemap.xml
